@@ -14,6 +14,10 @@
 		DE9F49402AB2677A00774D16 /* RatesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F493F2AB2677A00774D16 /* RatesApi.swift */; };
 		DE9F49432AB26A5200774D16 /* RatesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F49422AB26A5200774D16 /* RatesRouter.swift */; };
 		DE9F49452AB26A7300774D16 /* CurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F49442AB26A7300774D16 /* CurrencyRouter.swift */; };
+		DEA8986E2AB36C2400B70E1B /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8986D2AB36C2400B70E1B /* BaseStore.swift */; };
+		DEA898712AB36D4300B70E1B /* RatesFluctuationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA898702AB36D4300B70E1B /* RatesFluctuationObject.swift */; };
+		DEA898732AB3742C00B70E1B /* CurrencySymbolObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA898722AB3742C00B70E1B /* CurrencySymbolObject.swift */; };
+		DEA898752AB3755000B70E1B /* RatesHistoricalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA898742AB3755000B70E1B /* RatesHistoricalObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		DE9F493F2AB2677A00774D16 /* RatesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesApi.swift; sourceTree = "<group>"; };
 		DE9F49422AB26A5200774D16 /* RatesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesRouter.swift; sourceTree = "<group>"; };
 		DE9F49442AB26A7300774D16 /* CurrencyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRouter.swift; sourceTree = "<group>"; };
+		DEA8986D2AB36C2400B70E1B /* BaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
+		DEA898702AB36D4300B70E1B /* RatesFluctuationObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesFluctuationObject.swift; sourceTree = "<group>"; };
+		DEA898722AB3742C00B70E1B /* CurrencySymbolObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolObject.swift; sourceTree = "<group>"; };
+		DEA898742AB3755000B70E1B /* RatesHistoricalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesHistoricalObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,8 @@
 		DE9F493D2AB2638900774D16 /* NetworkRepository */ = {
 			isa = PBXGroup;
 			children = (
+				DEA8986F2AB36D1800B70E1B /* Objects */,
+				DEA8986C2AB36BFD00B70E1B /* Stores */,
 				DE9F49412AB26A2600774D16 /* Routers */,
 				DE9F493E2AB2673800774D16 /* APIS */,
 			);
@@ -106,6 +116,24 @@
 				DE9F49442AB26A7300774D16 /* CurrencyRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		DEA8986C2AB36BFD00B70E1B /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				DEA8986D2AB36C2400B70E1B /* BaseStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		DEA8986F2AB36D1800B70E1B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DEA898702AB36D4300B70E1B /* RatesFluctuationObject.swift */,
+				DEA898722AB3742C00B70E1B /* CurrencySymbolObject.swift */,
+				DEA898742AB3755000B70E1B /* RatesHistoricalObject.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +208,12 @@
 			files = (
 				DE9F49452AB26A7300774D16 /* CurrencyRouter.swift in Sources */,
 				DE9F49432AB26A5200774D16 /* RatesRouter.swift in Sources */,
+				DEA8986E2AB36C2400B70E1B /* BaseStore.swift in Sources */,
+				DEA898752AB3755000B70E1B /* RatesHistoricalObject.swift in Sources */,
 				DE9F49312AB2625100774D16 /* ContentView.swift in Sources */,
 				DE9F492F2AB2625100774D16 /* ExchangeRatesApp.swift in Sources */,
+				DEA898732AB3742C00B70E1B /* CurrencySymbolObject.swift in Sources */,
+				DEA898712AB36D4300B70E1B /* RatesFluctuationObject.swift in Sources */,
 				DE9F49402AB2677A00774D16 /* RatesApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
