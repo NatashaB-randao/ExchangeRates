@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE3C396A2AB6487700D82838 /* RatesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C39692AB6487700D82838 /* RatesStore.swift */; };
+		DE3C396C2AB64B0F00D82838 /* CurrencyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C396B2AB64B0F00D82838 /* CurrencyStore.swift */; };
 		DE9F492F2AB2625100774D16 /* ExchangeRatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F492E2AB2625100774D16 /* ExchangeRatesApp.swift */; };
 		DE9F49312AB2625100774D16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F49302AB2625100774D16 /* ContentView.swift */; };
 		DE9F49332AB2625300774D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9F49322AB2625300774D16 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE3C39692AB6487700D82838 /* RatesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesStore.swift; sourceTree = "<group>"; };
+		DE3C396B2AB64B0F00D82838 /* CurrencyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyStore.swift; sourceTree = "<group>"; };
 		DE9F492B2AB2625100774D16 /* ExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9F492E2AB2625100774D16 /* ExchangeRatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApp.swift; sourceTree = "<group>"; };
 		DE9F49302AB2625100774D16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				DEA8986D2AB36C2400B70E1B /* BaseStore.swift */,
+				DE3C39692AB6487700D82838 /* RatesStore.swift */,
+				DE3C396B2AB64B0F00D82838 /* CurrencyStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -213,8 +219,10 @@
 				DE9F49312AB2625100774D16 /* ContentView.swift in Sources */,
 				DE9F492F2AB2625100774D16 /* ExchangeRatesApp.swift in Sources */,
 				DEA898732AB3742C00B70E1B /* CurrencySymbolObject.swift in Sources */,
+				DE3C396A2AB6487700D82838 /* RatesStore.swift in Sources */,
 				DEA898712AB36D4300B70E1B /* RatesFluctuationObject.swift in Sources */,
 				DE9F49402AB2677A00774D16 /* RatesApi.swift in Sources */,
+				DE3C396C2AB64B0F00D82838 /* CurrencyStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
