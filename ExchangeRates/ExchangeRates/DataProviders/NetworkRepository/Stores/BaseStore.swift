@@ -18,21 +18,18 @@ class BaseStore {
         var rates: Rates?
         
         init(data: Data?, response: URLResponse?) throws {
-            guard let data = data, let response = response as? HTTPURLResponse
-            else {
+            guard let data = data, let response = response as? HTTPURLResponse else {
                 throw NSError(domain: "", code: 901, userInfo: [NSLocalizedDescriptionKey: "Error getting information"]) as Error
-                
             }
             
             if let url = response.url?.absoluteString,
-               let json = String(data: data, encoding: .utf8) {
+                let json = String(data: data, encoding: .utf8) {
                 print("\(response.statusCode): \(url)")
                 print("\(json)")
             }
-             
+            
             self = try JSONDecoder().decode(RateResult.self, from: data)
         }
-        
     }
     
     struct SymbolResult: Codable {
@@ -42,21 +39,18 @@ class BaseStore {
         var symbols: CurrencySymbolObject?
         
         init(data: Data?, response: URLResponse?) throws {
-            guard let data = data, let response = response as? HTTPURLResponse
-            else {
+            guard let data = data, let response = response as? HTTPURLResponse else {
                 throw NSError(domain: "", code: 901, userInfo: [NSLocalizedDescriptionKey: "Error getting information"]) as Error
-                
             }
             
             if let url = response.url?.absoluteString,
-               let json = String(data: data, encoding: .utf8) {
+                let json = String(data: data, encoding: .utf8) {
                 print("\(response.statusCode): \(url)")
                 print("\(json)")
             }
-             
+            
             self = try JSONDecoder().decode(SymbolResult.self, from: data)
         }
         
     }
-    
 }
