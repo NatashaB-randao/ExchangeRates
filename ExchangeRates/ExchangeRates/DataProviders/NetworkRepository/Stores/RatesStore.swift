@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol RatesStoreProtocol {
-    func fetchFluctuation(by base: String, from symbols: [String], startDate: String, endDate: String) async throws -> RatesFluctuationObject
-    func fetchTimeseries(by base: String, from symbol: String, startDate: String, endDate: String) async throws -> RatesHistoricalObject
+protocol RatesStoreProtocol: GenericStoreProtocol {
+    func fetchFluctuation(by base: String, from symbols: [String], startDate: String, endDate: String, completion: @escaping completion<RateObject<RatesFluctuationObject>?>)
+    func fetchTimeseries(by base: String, from symbol: String, startDate: String, endDate: String, completion: @escaping completion<RateObject<RatesHistoricalObject>?>)
 }
 
 class RatesStore: BaseStore, RatesStoreProtocol {
