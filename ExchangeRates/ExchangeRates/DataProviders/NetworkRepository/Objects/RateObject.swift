@@ -1,5 +1,5 @@
 //
-//  RatesFluctuationObject.swift
+//  RateObject.swift
 //  ExchangeRates
 //
 //  Created by Natasha Brandão on 14/09/23.
@@ -7,14 +7,20 @@
 
 import Foundation
 
+struct RateObject<Rates: Codable>: Codable {
+    var base: String?
+    var success: Bool = false
+    var rates: Rates?
+}
+
 typealias RatesFluctuationObject = [String: FluctuationObject]
 
-struct FluctuationObject: Codable {
+struct FluctuationObject: Identifiable, Codable {
     
+    let id = UUID()
     let change: Double
     let changePct: Double
     let endRate: Double
-
     
     enum CodingKeys: String, CodingKey {
         case change
@@ -22,3 +28,5 @@ struct FluctuationObject: Codable {
         case endRate = "end_rate"
     }
 }
+
+typealias RatesHistoricalObject = [String: [String: Double]]

@@ -13,11 +13,11 @@ enum CurrencyRouter {
     
     var path: String {
         switch self {
-        case.symbols: return RatesApi.symbols
+        case .symbols: return RatesApi.symbols
         }
     }
     
-    func asUrlRequest() throws -> URLRequest? {
+    func asUrlRequest() -> URLRequest? {
         guard let url = URL(string: RatesApi.baseUrl) else { return nil }
         
         switch self {
@@ -30,3 +30,4 @@ enum CurrencyRouter {
     }
     
 }
+
